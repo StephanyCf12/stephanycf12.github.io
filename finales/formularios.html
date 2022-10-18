@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="../style_page2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios</h1>
+</header>
+<nav>
+  <ul id="list-nav"><li><a href="../formatos/segundo ejercicio.html" target="new">Listas</a></li>
+	<li><a href="../formatos/formatos1.html" target="new">Formatos</a></li>
+	<li><a href="../formatos/enlaces.html" target="new">Enlaces</a></li>
+	<li><a href="../tablas/tablas-enlaces.html" target="new">Tablas</a></li>
+	<li><a href="../formatos/Imágenes.html" target="new">Imágenes</a></li>
+	<li><a href="video.html">Audio</a></li>
+	<li><a href="video de verdad.html">Video</a></li>
+	<li><a href="formularios.html">Formulario</a></li>
+	<li><a href="../index.html">Index</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2> Formulario 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure obcaecati recusandae beatae, nisi in dolor blanditiis et facere rerum illo amet ex voluptatibus est quisquam repellat incidunt iste, culpa laudantium quos perferendis sit corporis voluptatem explicabo?, exercitationem, voluptate. Porro libero illum asperiores nemo cum quod voluptatibus repellendus. Aspernatur fuga dicta delectus, rerum modi.</p>
+    <form id="form1" name="form1" method="GET" action="procesamiento.html">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="apellido">Apellidos:</label>
+      <input type="text" name="apellido" id="apellido">
+      <input name="submit" type="submit" id="submit" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+      
+    </form>
+  </section>
+  <section>
+    <h2> Formulario radiobuttom</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure obcaecati recusandae beatae, nisi in dolor blanditiis et facere rerum illo amet ex voluptatibus est quisquam repellat incidunt iste, culpa laudantium quos perferendis sit corporis voluptatem explicabo?, exercitationem, voluptate. Porro libero illum asperiores nemo cum quod voluptatibus repellendus. Aspernatur fuga dicta delectus, rerum modi.</p>
+    <form id="form2" name="form2" method="get" action="procesamiento.html">
+      <label id="label2centrado">Elige tu género:</label>
+      <table width="200" class="celdacentrada tablacentrar">
+        <tr>
+          <td><label>
+            <input type="radio" name="G&eacute;nero" value="Fem" id="Geacutenero_0">
+            Femenino</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="G&eacute;nero" value="Mas" id="Geacutenero_1">
+            Masculino</label></td>
+        </tr>
+      </table>
+      <label for="País">¿De que país vienes?:</label>
+      <select name="País" id="País">
+        <option value="MX">México</option>
+        <option value="ES">España</option>
+        <option value="IT">Italia</option>
+        <option value="USA">Estados Unidos</option>
+      </select>
+      <br>
+<br>
+<label>¿Dónde residirás durante tu visita?</label>
+<p>
+  <label>
+    <input type="checkbox" name="Residencia_particular" value="domicilio-particular" id="Residencia_particular_0">
+    Casa de un amigo</label>
+  <br>
+  <label>
+    <input type="checkbox" name="Residencia_particular" value="Hotel" id="Residencia_particular_1">
+    Hotel</label>
+  <br>
+  <label>
+    <input type="checkbox" name="Residencia_particular" value="Airbnb" id="Residencia_particular_2">
+    Airbnb</label>
+  <br>
+</p>
+<br><br>
+<input name="Botón2" type="submit" id="Botón2" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+    </form>
+    </section>
+  <section>
+    <h2> Presentación de integrantes</h2>
+    <p>Cuéntanos un poco sobre ti, el propósito es que los integrantes se conozcan entre sí. Pero primero regístrate:</p>
+    <form id="form4" name="form4" method="post">
+      <label for="username">Usuario:</label>
+      <br>
+  <input type="text" id="Usuario" name="Usuario"><br>
+  <label for="pwd">Contraseña:</label><br>	
+  <input type="password" id="Contraseña" name="Contraseña"><br><br>
+<br><label for="color">Color favorito:</label>
+      <input type="color" name="color" id="color"><br><br>
+	<label for="cumpleaños">Cumpleaños:</label>
+  <input type="date" id="cumpleaños" name="cumpleaños"><br><br>
+	<label for="myfile">Sube tu foto&nbsp; :</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+	<label for="quantity">Cuál es tu número favorito del 1-10:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+	<br><br><input name="botón4" type="submit" id="botón4" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+    <br></form>
+  </section>
+  <section>
+    <h2> Formulario de contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure obcaecati recusandae beatae, nisi in dolor blanditiis et facere rerum illo amet ex voluptatibus est quisquam repellat incidunt iste, culpa laudantium quos perferendis sit corporis voluptatem explicabo?, exercitationem, voluptate.</p>
+    <form id="form3" name="form3" method="post">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+		<br><br>
+      <label for="comentario">Comentario:</label>
+      <textarea name="comentario" maxlength="100" id="comentario">Escribe tu mensaje...</textarea>
+      <input name="boton3" type="submit" class="botóncentrar" id="boton3" formaction="procesamiento.html" formmethod="GET" value="Enviar">
+      
+    </form>
+    </section>
+</main>
+<footer>
+  <h6>Elaborado por: Casas Flores Stephany</h6>
+</footer>
+</body>
+</html>
